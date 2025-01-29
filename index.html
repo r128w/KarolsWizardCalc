@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karol wizarding calc i just wanna see how long I can make this name</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Karol wizard calc</h1>
+        <section>
+            <h2>Ingredient Substitution Wizard</h2>
+            <label for="ingredient-substitution">Select Ingredient For The Wizard to Substitute:</label>
+            <select id="ingredient-substitution">
+                <option value="butter">Butter</option>
+                <option value="oil">Oil (1:1 ratio)</option>
+                <option value="applesauce">Applesauce (for baking)</option>
+                <option value="yogurt">Yogurt (for moisture)</option>
+                <option value="coconut oil">Coconut Oil (1:1 ratio)</option>
+                <option value="margarine">Margarine (1:1 ratio)</option>
+                <option value="sour cream">Sour Cream</option>
+                <option value="heavy cream">Heavy Cream</option>
+                <option value="milk">Milk</option>
+                <option value="flour">Flour</option>
+            </select>
+            <button id="substitute-btn">Ponder da magic orb...</button>
+            <p id="substitute-result"></p>
+        </section>
+        <section>
+            <h2>Recipe Time Scaling</h2>
+            <label for="original-time">Enter Original Cooking Time (in minutes):</label>
+            <input type="number" id="original-time" placeholder="e.g., 20" min="1">
+            <label for="original-quantity">Enter Original Recipe Quantity (in servings):</label>
+            <input type="number" id="original-quantity" placeholder="e.g., 1" min="1">
+            <label for="scaled-quantity">Enter New Quantity (in servings):</label>
+            <input type="number" id="scaled-quantity" placeholder="e.g., 2" min="1">
+            <label for="temperature">Enter Cooking Temperature:</label>
+            <input type="number" id="temperature" placeholder="e.g., 350" min="1">
+            <label for="unit-toggle">Select Temperature Unit:</label>
+            <select id="unit-toggle">
+                <option value="F">°F</option>
+                <option value="C">°C</option>
+            </select>
+            <label for="recipe-type">Select Cooking Method:</label>
+            <select id="recipe-type">
+                <option value="bake">Baking</option>
+                <option value="boil">Boiling</option>
+                <option value="grill">Grilling</option>
+                <option value="stovetop">Stovetop</option>
+            </select>
+            <button id="time-calc-btn">Calculate New Time</button>
+            <p id="time-result"></p>
+            <section>
+                <h2>Calc Required Temperature (works w/ previous calc above first)</h2>
+                <label for="target-time">Enter Target Cooking Time (in minutes):</label>
+                <input type="number" id="target-time" placeholder="e.g., 30" min="1" required>
+                <button id="temp-calc-btn">Calc Required Temperature</button>
+                <p id="temp-result"></p>
+            </section>
+        </section>
+        <section>
+            <h2>Flavor Pairing</h2>
+            <label for="flavor-pairing">Select Main Ingredient:</label>
+            <select id="flavor-pairing">
+                <option value="chicken">Chicken</option>
+                <option value="beef">Beef</option>
+                <option value="salmon">Salmon</option>
+                <option value="pasta">Pasta</option>
+                <option value="tofu">Tofu</option>
+                <option value="chocolate">Chocolate</option>
+                <option value="cheese">Cheese</option>
+                <option value="egg">Egg</option>
+                <option value="potato">Potato</option>
+            </select>
+            <button id="pairing-btn">Find Flavor Pairings</button>
+            <p id="pairing-result"></p>
+        </section>
+        <section>
+            <h2>Wizard Ponder: Will These Pair?</h2>
+            <label for="coin-ingredient-1">Enter First Ingredient:</label>
+            <input type="text" id="coin-ingredient-1" placeholder="e.g., chicken">
+            <label for="coin-ingredient-2">Enter Second Ingredient:</label>
+            <input type="text" id="coin-ingredient-2" placeholder="e.g., garlic">
+            <button id="coin-flip-btn">Ponder...</button>
+            <p id="coin-result"></p>
+        </section>
+    </div>
+    <div class="timer-container">
+        <h2>Timers</h2> <!--WIP/FIX-->
+        <div id="timers-container"></div>
+        <button id="add-timer-btn">Add Timer</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
