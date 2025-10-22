@@ -2,24 +2,28 @@ const ingredientSubstitutes = {
     "butter": "1/4 cup oil or margarine",
     "oil": "1 cup applesauce (for baking)",
     "applesauce": "1/4 cup mashed banana",
+    "mashed banana" :"1 cup oil",
     "yogurt": "1 cup sour cream or buttermilk",
     "coconut oil": "1 cup butter or margarine",
     "margarine": "1 cup butter",
     "sour cream": "1 cup Greek yogurt",
+    "Greek yogurt": "1 cup sour cream",
     "heavy cream": "1 cup milk + 1/4 cup butter",
     "milk": "1 cup almond milk or oat milk",
-    "flour": "1 cup almond flour or gluten-free flour"
+    "flour": "1 cup almond flour or gluten-free flour",
+    "almond flour": "1 cup regular flour",
+    "gluten-free flour": "1 cup regular flour"
 };
 const flavorPairings = {
     "chicken": ["garlic", "thyme", "rosemary", "lemon", "parsley"],
-    "beef": ["garlic", "rosemary", "bay leaves", "thyme"],
+    "beef": ["garlic", "rosemary", "bay leaves", "thyme", "shrimp"],
     "salmon": ["dill", "lemon", "garlic", "chives"],
-    "pasta": ["basil", "garlic", "parmesan", "tomato"],
+    "pasta": ["basil", "garlic", "parmesan", "tomato", "salmon", "beef"],
     "tofu": ["soy sauce", "ginger", "garlic", "sesame oil"],
-    "chocolate": ["vanilla", "coffee", "salt", "peanut butter"],
-    "cheese": ["wine", "fruit", "nuts", "bread"],
-    "egg": ["cheese", "spinach", "mushrooms", "bacon"],
-    "potato": ["cheese", "sour cream", "chives", "bacon"]
+    "chocolate": ["vanilla", "coffee", "salt", "peanut butter", "banana"],
+    "cheese": ["wine", "fruit", "nuts", "bread", "pineapple"],
+    "egg": ["cheese", "spinach", "mushrooms", "bacon", "toast"],
+    "potato": ["cheese", "sour cream", "chives", "bacon", "salt", "potato"]
 };
 document.getElementById("substitute-btn").addEventListener("click", suggestSubstitute);
 document.getElementById("time-calc-btn").addEventListener("click", calculateTime);
